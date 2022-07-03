@@ -1,0 +1,32 @@
+.menu {
+    background: #7242e6;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100px;
+    width: 100px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      li {
+        color: white;
+        &.logo {
+          margin: 2rem 0 10rem 0;
+        }
+        &:not(&.logo) {
+          margin: 1rem;
+          padding: 1rem;
+          border-radius: 10px;
+          transition: 0.3s all linear;
+          &:hover {
+            background: #926de9;
+          }
+        }
+      }
+    }
+  }
